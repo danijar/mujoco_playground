@@ -470,7 +470,7 @@ class Joystick(g1_base.G1Env):
     )
 
     state = jp.hstack([
-        noisy_linvel,  # 3
+        # noisy_linvel,  # 3  # NOTE!!!
         noisy_gyro,  # 3
         noisy_gravity,  # 3
         info["command"],  # 3
